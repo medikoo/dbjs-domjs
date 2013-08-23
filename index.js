@@ -1,7 +1,9 @@
 'use strict';
 
-var input = require('./input');
+var field = require('./field')
+  , input = require('./input');
 
 module.exports = function (domjs) {
+	field(domjs);
 	input(domjs);
 };
