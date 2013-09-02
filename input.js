@@ -8,9 +8,7 @@ module.exports = function (domjs) {
 
 	domjs.ns.input = function (attrs) {
 		var rel = attrs && attrs.dbjs;
-		if (!rel || !types[rel._type_]) {
-			return input.apply(this, arguments);
-		}
+		if (!rel || !types[rel._type_]) return input.apply(this, arguments);
 		return rel.toDOMInput(domjs.document, attrs).dom;
 	};
 };
