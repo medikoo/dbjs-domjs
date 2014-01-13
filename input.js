@@ -1,15 +1,15 @@
 'use strict';
 
-var isObservableValue = require('observable-value/is-observable-value');
+var validObservableValue = require('observable-value/valid-observable-value');
 
 module.exports = function (domjs) {
 	var input = domjs.ns.input;
 
 	domjs.ns.input = function (attrs) {
-		var observable = attrs && attrs.dbjs;
-		if (!observable || !isObservableValue(observable)) {
-			return input.apply(this, arguments);
+		if (attrs && (attrs.dbjs != null)) {
+			return validObservableValue(attrs.dbjs)
+				.toDOMInput(domjs.document, attrs).dom;
 		}
-		return observable.toDOMInput(domjs.document, attrs).dom;
+		return input.apply(this, arguments);
 	};
 };
