@@ -18,7 +18,7 @@ module.exports = function (domjs) {
 			if (attrs.type === 'hidden') {
 				if (!isType) attrs.name = attrs.dbjs.dbId;
 				if (attrs.value != null) {
-					attrs.value = [isType ? attrs.dbjs : attrs.dbjs.descriptor.type]
+					attrs.value = (isType ? attrs.dbjs : attrs.dbjs.descriptor.type)
 						.toInputValue(attrs.value);
 				}
 				delete attrs.dbjs;
