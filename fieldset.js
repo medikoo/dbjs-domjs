@@ -1,6 +1,6 @@
 'use strict';
 
-var Fieldset = require('dbjs-dom/input/utils/fieldset')
+var Fieldset = require('dbjs-dom/input/utils/fieldset').Fieldset
 
   , isArray = Array.isArray;
 
