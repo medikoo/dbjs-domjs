@@ -6,7 +6,7 @@ var isObservableValue = require('observable-value/is-observable-value')
 module.exports = function (domjs) {
 	var input = domjs.ns.input;
 
-	domjs.ns.input = function (attrs) {
+	return (domjs.ns.input = function (attrs) {
 		var isType;
 		if (attrs && (attrs.dbjs != null)) {
 			if (!isObservableValue(attrs.dbjs)) {
@@ -27,5 +27,5 @@ module.exports = function (domjs) {
 			return attrs.dbjs.toDOMInput(domjs.document, attrs).dom;
 		}
 		return input.apply(this, arguments);
-	};
+	});
 };

@@ -7,7 +7,7 @@ var Fieldset = require('dbjs-dom/input/utils/fieldset').Fieldset
 module.exports = function (domjs) {
 	var fieldset = domjs.ns.fieldset;
 
-	domjs.ns.fieldset = function (attrs) {
+	return (domjs.ns.fieldset = function (attrs) {
 		var obj = attrs && attrs.dbjs;
 		if (!obj) return fieldset.apply(this, arguments);
 		if (isArray(obj)) {
@@ -16,5 +16,5 @@ module.exports = function (domjs) {
 		}
 		if (!obj.toDOMFieldset) return fieldset.apply(this, arguments);
 		return obj.toDOMFieldset(domjs.document, attrs).dom;
-	};
+	});
 };
