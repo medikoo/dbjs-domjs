@@ -1,6 +1,6 @@
 {
   "name": "dbjs-domjs",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "DBJS directives for DOMJS",
   "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
   "keywords": [
@@ -18,8 +18,8 @@
     "url": "git://github.com/medikoo/dbjs-domjs.git"
   },
   "dependencies": {
-    "dbjs-dom": "git://github.com/medikoo/dbjs-dom.git",
-    "observable-value": "git://github.com/medikoo/observable-value.git"
+    "dbjs-dom": "0.0.1",
+    "observable-value": "0.0.2"
   },
   "license": "MIT"
 }
