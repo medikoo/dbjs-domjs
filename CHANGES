@@ -1,2 +1,9 @@
-v0.0.1
+v0.1.0  --  2017.05.23
+* Support direct Type input in field
+* Ensure propery normalization of fieldset output
+* Support trailing arguments in fieldset
+* Add .editorconfig
+* Fix spelling of LICENSE
+
+v0.0.1  --  2014.05.08
 * Initial (alpha)
