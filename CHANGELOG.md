@@ -9,3 +9,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### Features
 
 * form with dedicated error handler ([223c914](https://github.com/medikoo/dbjs-domjs/commit/223c914))
+
+## Old Changelog
+
+See `CHANGES` document

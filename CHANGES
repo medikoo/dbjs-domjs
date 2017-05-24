@@ -1,3 +1,5 @@
+New changes are described in CHANGELOG.md
+
 v0.1.0  --  2017.05.23
 * Support direct Type input in field
 * Ensure propery normalization of fieldset output
