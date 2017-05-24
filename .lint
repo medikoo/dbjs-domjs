@@ -10,3 +10,6 @@ maxlen 100
 ass
 nomen
 plusplus
+vars
+
+predef+ console

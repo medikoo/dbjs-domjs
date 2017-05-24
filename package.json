@@ -19,7 +19,9 @@
   },
   "dependencies": {
     "dbjs": "^0.1.9",
-    "dbjs-dom": "0.1",
+    "dbjs-dom": "^0.1.2",
+    "dom-ext": "^0.1.3",
+    "es5-ext": "^0.10.21",
     "observable-value": "0.1"
   },
   "devDependencies": {
