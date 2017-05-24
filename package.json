@@ -1,6 +1,6 @@
 {
   "name": "dbjs-domjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DBJS directives for DOMJS",
   "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
   "keywords": [
